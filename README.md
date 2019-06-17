@@ -40,7 +40,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention three tools we can use to make AJAX requests.
 
-Fetch, Axios, XMLHttpRequest
+  Fetch, Axios, XMLHttpRequest
 
 
 ## Project Set Up

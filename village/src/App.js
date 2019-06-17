@@ -22,10 +22,16 @@ class App extends Component {
       .catch(err => console.log(err));
   }
 
+  postSmurf(smurf) {
+    axios.post('http://localhost:3333/smurfs', smurf)
+      .then(res => console.log(res.data))
+      .catch(err => console.log(err));
+  }
+
   render() {
     return (
       <div className="App">
-        <SmurfForm />
+        <SmurfForm postSmurf={this.postSmurf}/>
         <Smurfs smurfs={this.state.smurfs} />
       </div>
     );
